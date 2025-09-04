@@ -4776,23 +4776,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LittleAnjel\\.nuget\\packages\\": {},
+    "C:\\Users\\Cliente\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LittleAnjel\\OneDrive - UNIP\\Documentos\\Backend Hortifruti\\Hortifruti.csproj",
+      "projectUniqueName": "C:\\Users\\Cliente\\Source\\Repos\\PIM-IV\\Backend-Hortifruti\\Hortifruti.csproj",
       "projectName": "Hortifruti",
-      "projectPath": "C:\\Users\\LittleAnjel\\OneDrive - UNIP\\Documentos\\Backend Hortifruti\\Hortifruti.csproj",
-      "packagesPath": "C:\\Users\\LittleAnjel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LittleAnjel\\OneDrive - UNIP\\Documentos\\Backend Hortifruti\\obj\\",
+      "projectPath": "C:\\Users\\Cliente\\Source\\Repos\\PIM-IV\\Backend-Hortifruti\\Hortifruti.csproj",
+      "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cliente\\Source\\Repos\\PIM-IV\\Backend-Hortifruti\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\LittleAnjel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cliente\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4801,6 +4801,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4869,7 +4870,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -4877,7 +4878,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.8 to 9.0.0. Reference the package directly from the project to select a different version. \r\n Hortifruti -> Microsoft.EntityFrameworkCore.Design 9.0.8 -> Microsoft.EntityFrameworkCore.Relational 9.0.8 -> Microsoft.EntityFrameworkCore (>= 9.0.8) \r\n Hortifruti -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.8 to 9.0.0. Reference the package directly from the project to select a different version. \r\n Hortifruti -> Microsoft.EntityFrameworkCore.SqlServer 9.0.8 -> Microsoft.EntityFrameworkCore.Relational 9.0.8 -> Microsoft.EntityFrameworkCore (>= 9.0.8) \r\n Hortifruti -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
       "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net9.0"
