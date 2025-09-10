@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Hortifruti login</title>
+</head>
+<body>
+    <!--Classe container, ela é o quadrado de fundo e é onde contem todas as informações do login-->
+    <main class="container">
+        <form>
+            <h1>Hortifrúti</h1>
+
+             <!--Nessa div é a entrada de dados do login do usuário-->
+            <div class="input-box">
+                <input placeholder="Usuário" type="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            
+            <!--Entrada de dados da senha do usuário juntamente com o icone-->
+            <div class="input-box">
+                <input placeholder="Senha" type="password" id="senha">
+                <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+            </div>
+
+            <!--Div do texto "Lembrar minha senha", juntamente com o checkbox-->
+            <div class="lembrar-senha">
+                <input type="checkbox" >
+                <label>Lembrar minha senha</label>
+            </div>
+            
+            <!--Link de "Esqueci minha senha"-->
+            <div class="esqueci-senha"> 
+                <a href="ENVIAR EMAIL PARA GERENTE">Esqueci minha senha</a>
+            </div>
+
+            <!--Botão para fazer o login-->
+            <button type="submit" class="login">Login</button>
+
+        </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
