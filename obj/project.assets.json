@@ -4867,7 +4867,8 @@
       "outputPath": "C:\\Users\\Kelve\\OneDrive\\Documentos\\Backend-Hortifruti\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kelve\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Kelve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
