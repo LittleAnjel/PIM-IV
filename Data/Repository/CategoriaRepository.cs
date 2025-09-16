@@ -30,7 +30,7 @@ public class CategoriaRepository : ICategoriaRepository
         return categoria;
     }
 
-    public async Task AtulizarAsync(Categoria categoria)
+    public async Task AtualizarAsync(Categoria categoria)
     {
         _context.Entry(categoria).State = EntityState.Modified;
         await _context.SaveChangesAsync();
