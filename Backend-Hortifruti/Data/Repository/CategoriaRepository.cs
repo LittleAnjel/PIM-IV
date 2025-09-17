@@ -38,11 +38,11 @@ public class CategoriaRepository : ICategoriaRepository
 
     public async Task DeletarAsync(int id)
     {
-        var tarefa = await ObterPorIdAsync(id);
+        var categoria = await ObterPorIdAsync(id);
         
-        if (tarefa != null)
+        if (categoria != null)
         {
-            _context.Categoria.Remove(tarefa);
+            _context.Categoria.Remove(categoria);
             await _context.SaveChangesAsync();
         }
     }
