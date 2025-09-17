@@ -16,5 +16,6 @@ namespace Hortifruti.Controllers.Data
         public DbSet<Categoria> Categoria { get; set; }
 
         public DbSet<Fornecedor> Fornecedor { get; set; }
+        
     }
 }
