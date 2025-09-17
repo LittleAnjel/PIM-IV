@@ -1,0 +1,23 @@
+﻿# JetBrains Rider specific files
+.idea/
+*.sln.iml
+
+# Build artifacts
+bin/
+obj/
+
+# NuGet packages
+packages/
+
+# Visual Studio files
+*.suo
+.vs/
+
+# Log files and temporary files
+
+temp/
+
+# Sensitive files (adjust as needed)
+**/appsettings*.json
+**/launchSettings*.json
+
