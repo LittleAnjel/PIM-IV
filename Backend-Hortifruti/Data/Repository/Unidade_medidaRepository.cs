@@ -24,26 +24,26 @@ public class Unidade_medidaRepository : IUnidade_medidaRepository
         return await _context.Unidade_medida.FindAsync(id);
     }
 
-    public async Task<Unidade_medida> AdicionarAsync(Unidade_medida fornecedor)
+    public async Task<Unidade_medida> AdicionarAsync(Unidade_medida unidade_medida)
     {
-        _context.Unidade_medida.Add(fornecedor);
+        _context.Unidade_medida.Add(unidade_medida);
         await _context.SaveChangesAsync();
-        return fornecedor;
+        return unidade_medida;
     }
 
-    public async Task AtualizarAsync(Unidade_medida fornecedor)
+    public async Task AtualizarAsync(Unidade_medida unidade_medida)
     {
-        _context.Entry(fornecedor).State = EntityState.Modified;
+        _context.Entry(unidade_medida).State = EntityState.Modified;
         await _context.SaveChangesAsync();
     }
 
     public async Task DeletarAsync(int id)
     {
-        var fornecedor = await ObterPorIdAsync(id);
+        var unidade_medida = await ObterPorIdAsync(id);
 
-        if (fornecedor != null)
+        if (unidade_medida != null)
         {
-            _context.Unidade_medida.Remove(fornecedor);
+            _context.Unidade_medida.Remove(unidade_medida);
             await _context.SaveChangesAsync();
         }
     }

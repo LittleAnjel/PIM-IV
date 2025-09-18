@@ -19,7 +19,7 @@ public class Unidade_medidaController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Unidade_medida>>> ObterUnidade_medida()
     {
-        var unidade_medida = await _unidade_medidaService.ObterTodosUnidade_medidaesAsync();
+        var unidade_medida = await _unidade_medidaService.ObterTodosUnidade_medidaAsync();
         return Ok(unidade_medida);
     }
 

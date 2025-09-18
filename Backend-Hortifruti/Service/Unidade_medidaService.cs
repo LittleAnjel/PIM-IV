@@ -12,7 +12,7 @@ public class Unidade_medidaService : IUnidade_medidaService
         _unidade_medidaRepository = unidade_medidaRepository;
     }
 
-    public async Task<IEnumerable<Unidade_medida>> ObterTodosUnidade_medidaesAsync()
+    public async Task<IEnumerable<Unidade_medida>> ObterTodosUnidade_medidaAsync()
     {
         return await _unidade_medidaRepository.ObterTodasAsync();
     }

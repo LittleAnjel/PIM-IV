@@ -18,6 +18,8 @@ namespace Hortifruti.Controllers.Data
         public DbSet<Fornecedor> Fornecedor { get; set; }
 
         public DbSet<Unidade_medida> Unidade_medida { get; set; }
+
+        public DbSet<Funcionario> Funcionario { get; set; }
         
     }
 }
