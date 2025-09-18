@@ -1,4 +1,5 @@
-﻿using Hortifruti.Domain;
+﻿using Hortifruti.Data.Repository;
+using Hortifruti.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hortifruti.Controllers.Data
@@ -17,5 +18,6 @@ namespace Hortifruti.Controllers.Data
 
         public DbSet<Fornecedor> Fornecedor { get; set; }
         
+        public DbSet<Motivo_movimentacao> Motivo_movimentacao { get; set; }
     }
 }
