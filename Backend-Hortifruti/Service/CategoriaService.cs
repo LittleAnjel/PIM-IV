@@ -3,6 +3,7 @@ using Hortifruti.Domain;
 
 namespace Hortifruti.Service;
 
+
 public class CategoriaService : ICategoriaService
 {
     private readonly ICategoriaRepository _categoriaRepository;
@@ -11,10 +12,10 @@ public class CategoriaService : ICategoriaService
     {
         _categoriaRepository = categoriaRepository;
     }
-        
+
     public async Task<IEnumerable<Categoria>> ObterTodasCategoriasAsync()
     {
-       return await _categoriaRepository.ObterTodasAsync();
+        return await _categoriaRepository.ObterTodasAsync();
     }
 
     public async Task<Categoria?> ObterCategoriaPorIdAsync(int id)
@@ -29,7 +30,7 @@ public class CategoriaService : ICategoriaService
 
     public async Task AtualizarCategoriaAsync(int id, Categoria categoria)
     {
-        if (id != categoria.id)
+        if (id != categoria.Id)
         {
             // Lançar erro/exceção
             return;

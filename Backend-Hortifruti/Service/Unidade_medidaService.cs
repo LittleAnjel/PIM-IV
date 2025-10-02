@@ -29,7 +29,7 @@ public class Unidade_medidaService : IUnidade_medidaService
 
     public async Task AtualizarUnidade_medidaAsync(int id, Unidade_medida unidade_medida)
     {
-        if (id != unidade_medida.id)
+        if (id != unidade_medida.Id)
         {
             // Lançar erro/exceção
             return;

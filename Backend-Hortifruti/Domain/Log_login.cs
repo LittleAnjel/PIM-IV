@@ -1,8 +1,20 @@
-﻿namespace Hortifruti.Domain;
+﻿using System;
+using System.Collections.Generic;
 
-public class Log_login
+namespace Hortifruti.Domain;
+
+/// <summary>
+/// Necessário? Criei mais para registrar o momento que um usuário faz login no sistema, para ter uma ideia
+/// </summary>
+public partial class Log_login
 {
-    public int id {  get; set; }
-    public string usuario { get; set; }
-    public DateTime data_hora { get; set; }
+    public int Id { get; set; }
+
+    public int UsuarioId { get; set; }
+
+    public DateTime DataHora { get; set; }
+
+    public string Tipo { get; set; } = null!;
+
+    public virtual Usuario Usuario { get; set; } = null!;
 }

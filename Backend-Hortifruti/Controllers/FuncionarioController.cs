@@ -36,14 +36,14 @@ public class FuncionarioController : ControllerBase
     public async Task<ActionResult<Funcionario>> CriarFuncionario(Funcionario funcionario)
     {
         var funcionarioCriado = await _funcionarioService.CriarFuncionarioAsync(funcionario);
-        return CreatedAtAction(nameof(ObterCategoria), new { funcionarioCriado.id },
+        return CreatedAtAction(nameof(ObterCategoria), new { funcionarioCriado.Id },
             funcionarioCriado);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarFuncionario(int id, Funcionario funcionario)
     {
-        if (id != funcionario.id) return BadRequest();
+        if (id != funcionario.Id) return BadRequest();
         await _funcionarioService.AtualizarFuncionarioAsync(id, funcionario);
         return NoContent();
     }

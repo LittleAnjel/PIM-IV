@@ -16,7 +16,7 @@ public class CategoriaController : ControllerBase
     {
         _categoriaService = categoriaService;
     }
-    
+
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Categoria>>> ObterCategorias()
     {
@@ -37,14 +37,14 @@ public class CategoriaController : ControllerBase
     public async Task<ActionResult<Categoria>> CriarCategoria(Categoria categoria)
     {
         var categoriaCriada = await _categoriaService.CriarCategoriaAsync(categoria);
-        return CreatedAtAction(nameof(ObterCategoria), new { id = categoriaCriada.id },
+        return CreatedAtAction(nameof(ObterCategoria), new { id = categoriaCriada.Id },
             categoriaCriada);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarCategoria(int id, Categoria categoria)
     {
-        if (id != categoria.id) return BadRequest();
+        if (id != categoria.Id) return BadRequest();
         await _categoriaService.AtualizarCategoriaAsync(id, categoria);
         return NoContent();
     }

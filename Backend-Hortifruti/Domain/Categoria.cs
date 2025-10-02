@@ -1,7 +1,13 @@
-﻿namespace Hortifruti.Domain;
+﻿using System;
+using System.Collections.Generic;
 
-public class Categoria
+namespace Hortifruti.Domain;
+
+public partial class Categoria
 {
-    public int id {get; set;}
-    public string? nome {get; set;}
+    public int Id { get; set; }
+
+    public string Nome { get; set; } = null!;
+
+    public virtual ICollection<Produto> Produtos { get; set; } = new List<Produto>();
 }

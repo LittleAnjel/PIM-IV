@@ -29,7 +29,7 @@ public class FornecedorService : IFornecedorService
 
     public async Task AtualizarFornecedorAsync(int id, Fornecedor fornecedor)
     {
-        if (id != fornecedor.id)
+        if (id != fornecedor.Id)
         {
             // Lançar erro/exceção
             return;

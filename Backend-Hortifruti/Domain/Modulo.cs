@@ -3,7 +3,12 @@ using System.Collections.Generic;
 
 namespace Hortifruti.Domain;
 
-public partial class Cargo
+/// <summary>
+/// Tabela fixa (&quot;chumbada&quot;) com os registros dos módulos do sistema.
+/// 
+/// ex: Produtos, Venda, Relatório, Funcionário etc.
+/// </summary>
+public partial class Modulo
 {
     public int Id { get; set; }
 
@@ -12,8 +17,6 @@ public partial class Cargo
     public string? Descricao { get; set; }
 
     public sbyte Ativo { get; set; }
-
-    public virtual ICollection<Funcionario> Funcionarios { get; set; } = new List<Funcionario>();
 
     public virtual ICollection<Permissao> Permissaos { get; set; } = new List<Permissao>();
 }

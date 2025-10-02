@@ -29,7 +29,7 @@ public class Motivo_movimentacaoService : IMotivo_movimentacaoService
 
     public async Task AtualizarMotivo_movimentacaoAsync(int id, Motivo_movimentacao motivo_movimentacao)
     {
-        if (id != motivo_movimentacao.id)
+        if (id != motivo_movimentacao.Id)
         {
             // Lançar erro/exceção
             return;

@@ -35,14 +35,14 @@ public class Motivo_movimentacaoController : ControllerBase
     public async Task<ActionResult<Motivo_movimentacao>> CriarMotivo_movimentacao(Motivo_movimentacao motivo_movimentacao)
     {
         var motivo_movimentacaoCriada = await _motivo_movimentacaoService.CriarMotivo_movimentacaoAsync(motivo_movimentacao);
-        return CreatedAtAction(nameof(ObterMotivo_movimentacao), new { id = motivo_movimentacaoCriada.id },
+        return CreatedAtAction(nameof(ObterMotivo_movimentacao), new { id = motivo_movimentacaoCriada.Id },
             motivo_movimentacaoCriada);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarMotivo_movimentacao(int id, Motivo_movimentacao motivo_movimentacao)
     {
-        if (id != motivo_movimentacao.id) return BadRequest();
+        if (id != motivo_movimentacao.Id) return BadRequest();
         await _motivo_movimentacaoService.AtualizarMotivo_movimentacaoAsync(id, motivo_movimentacao);
         return NoContent();
     }

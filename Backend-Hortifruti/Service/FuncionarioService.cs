@@ -29,7 +29,7 @@ public class FuncionarioService : IFuncionarioService
 
     public async Task AtualizarFuncionarioAsync(int id, Funcionario funcionario)
     {
-        if (id != funcionario.id)
+        if (id != funcionario.Id)
         {
             // Lançar erro/exceção
             return;

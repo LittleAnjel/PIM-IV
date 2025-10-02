@@ -1,11 +1,24 @@
-﻿namespace Hortifruti.Domain;
+﻿using System;
+using System.Collections.Generic;
 
-public class Fornecedor_produto
+namespace Hortifruti.Domain;
+
+/// <summary>
+/// Necessário a chave primária id? 
+/// </summary>
+public partial class Fornecedor_produto
 {
-    public int id {get; set;}
-    public int produto_id {get; set;}
-    public int fornecedor_id {get; set;}
-    public int codigo_fornecedor {get; set;}
-    public DateTime data_registro {get; set;}
-    public Boolean disponibilidade {get; set;}
+    public int FornecedorId { get; set; }
+
+    public int ProdutoId { get; set; }
+
+    public string CodigoFornecedor { get; set; } = null!;
+
+    public DateOnly DataRegistro { get; set; }
+
+    public sbyte Disponibilidade { get; set; }
+
+    public virtual Fornecedor Fornecedor { get; set; } = null!;
+
+    public virtual Produto Produto { get; set; } = null!;
 }

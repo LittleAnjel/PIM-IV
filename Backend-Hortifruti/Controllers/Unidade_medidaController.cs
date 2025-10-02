@@ -36,14 +36,14 @@ public class Unidade_medidaController : ControllerBase
     public async Task<ActionResult<Unidade_medida>> CriarUnidade_medida(Unidade_medida unidade_medida)
     {
         var unidade_medidaCriado = await _unidade_medidaService.CriarUnidade_medidaAsync(unidade_medida);
-        return CreatedAtAction(nameof(ObterCategoria), new { unidade_medidaCriado.id },
+        return CreatedAtAction(nameof(ObterCategoria), new { unidade_medidaCriado.Id },
             unidade_medidaCriado);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarUnidade_medida(int id, Unidade_medida unidade_medida)
     {
-        if (id != unidade_medida.id) return BadRequest();
+        if (id != unidade_medida.Id) return BadRequest();
         await _unidade_medidaService.AtualizarUnidade_medidaAsync(id, unidade_medida);
         return NoContent();
     }

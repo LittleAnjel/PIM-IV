@@ -1,15 +1,39 @@
-﻿namespace Hortifruti.Domain;
+﻿using System;
+using System.Collections.Generic;
 
-public class Funcionario
+namespace Hortifruti.Domain;
+
+public partial class Funcionario
 {
-    public int id {get; set;}
-    public string cpf {get; set;}
-    //public int rg {get; set;} REALMENTE PRECISA?
-    public string nome {get; set;}
-    public string telefone {get; set;}
-    public string telefone_extra {get; set;}
-    public string email {get; set;}
-    public string conta_bancaria {get; set;}
-    public string agencia_bancaria {get; set;}
-    public Boolean ativo {get; set;}
+    public int Id { get; set; }
+
+    public int CargoId { get; set; }
+
+    public string Cpf { get; set; } = null!;
+
+    public string Rg { get; set; } = null!;
+
+    public string Nome { get; set; } = null!;
+
+    public string Telefone { get; set; } = null!;
+
+    public string? TelefoneExtra { get; set; }
+
+    public string Email { get; set; } = null!;
+
+    public string ContaBancaria { get; set; } = null!;
+
+    public string AgenciaBancaria { get; set; } = null!;
+
+    public sbyte Ativo { get; set; }
+
+    public virtual Cargo Cargo { get; set; } = null!;
+
+    public virtual ICollection<Historico_produto> HistoricoProdutos { get; set; } = new List<Historico_produto>();
+
+    public virtual ICollection<Saida> Saida { get; set; } = new List<Saida>();
+
+    public virtual ICollection<Token> Tokens { get; set; } = new List<Token>();
+
+    public virtual ICollection<Usuario> Usuarios { get; set; } = new List<Usuario>();
 }

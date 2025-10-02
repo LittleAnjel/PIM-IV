@@ -36,14 +36,14 @@ public class FornecedorController : ControllerBase
     public async Task<ActionResult<Fornecedor>> CriarFornecedor(Fornecedor fornecedor)
     {
         var fornecedorCriado = await _fornecedorService.CriarFornecedorAsync(fornecedor);
-        return CreatedAtAction(nameof(ObterCategoria), new { fornecedorCriado.id },
+        return CreatedAtAction(nameof(ObterCategoria), new { fornecedorCriado.Id },
             fornecedorCriado);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> AtualizarFornecedor(int id, Fornecedor fornecedor)
     {
-        if (id != fornecedor.id) return BadRequest();
+        if (id != fornecedor.Id) return BadRequest();
         await _fornecedorService.AtualizarFornecedorAsync(id, fornecedor);
         return NoContent();
     }

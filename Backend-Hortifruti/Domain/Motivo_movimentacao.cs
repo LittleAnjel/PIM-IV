@@ -1,7 +1,17 @@
-﻿namespace Hortifruti.Domain;
+﻿using System;
+using System.Collections.Generic;
 
-public class Motivo_movimentacao
+namespace Hortifruti.Domain;
+
+public partial class Motivo_movimentacao
 {
-    public int id { get; set; }
-    public string nome { get; set; }
+    public int Id { get; set; }
+
+    public string TipoMovimentacao { get; set; } = null!;
+
+    public sbyte Ativo { get; set; }
+
+    public virtual ICollection<Entrada> Entrada { get; set; } = new List<Entrada>();
+
+    public virtual ICollection<Saida> Saida { get; set; } = new List<Saida>();
 }

@@ -2,6 +2,7 @@ using Hortifruti.Controllers.Data;
 using Microsoft.EntityFrameworkCore;
 using Hortifruti.Data.Repository;
 using Hortifruti.Service;
+using Hortifruti.Data;
 // using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
