@@ -28,7 +28,7 @@ public partial class Produto
     /// </summary>
     public int QuantidadeMaxima { get; set; }
 
-    public virtual Categoria Categoria { get; set; } = null!;
+    public virtual Categoria? Categoria { get; set; }
 
     public virtual ICollection<Fornecedor_produto> FornecedorProdutos { get; set; } = new List<Fornecedor_produto>();
 
@@ -38,5 +38,5 @@ public partial class Produto
 
     public virtual ICollection<Item_saida> ItemSaida { get; set; } = new List<Item_saida>();
 
-    public virtual Unidade_medida UnidadeMedida { get; set; } = null!;
+    public virtual Unidade_medida? UnidadeMedida { get; set; }
 }
