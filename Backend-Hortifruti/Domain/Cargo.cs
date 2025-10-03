@@ -11,7 +11,7 @@ public partial class Cargo
 
     public string? Descricao { get; set; }
 
-    public sbyte Ativo { get; set; }
+    public bool Ativo { get; set; }
 
     public virtual ICollection<Funcionario> Funcionarios { get; set; } = new List<Funcionario>();
 

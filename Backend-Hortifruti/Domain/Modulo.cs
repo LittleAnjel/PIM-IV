@@ -16,7 +16,7 @@ public partial class Modulo
 
     public string? Descricao { get; set; }
 
-    public sbyte Ativo { get; set; }
+    public bool Ativo { get; set; }
 
     public virtual ICollection<Permissao> Permissaos { get; set; } = new List<Permissao>();
 }

@@ -20,7 +20,7 @@ public partial class Usuario
 
     public string Senha { get; set; } = null!;
 
-    public sbyte Ativo { get; set; }
+    public bool Ativo { get; set; }
 
     public virtual Funcionario Funcionario { get; set; } = null!;
 

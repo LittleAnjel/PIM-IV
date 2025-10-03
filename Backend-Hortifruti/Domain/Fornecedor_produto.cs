@@ -16,7 +16,7 @@ public partial class Fornecedor_produto
 
     public DateOnly DataRegistro { get; set; }
 
-    public sbyte Disponibilidade { get; set; }
+    public bool Disponibilidade { get; set; }
 
     public virtual Fornecedor? Fornecedor { get; set; }
 

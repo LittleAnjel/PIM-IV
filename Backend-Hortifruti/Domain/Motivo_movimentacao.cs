@@ -9,7 +9,7 @@ public partial class Motivo_movimentacao
 
     public string TipoMovimentacao { get; set; } = null!;
 
-    public sbyte Ativo { get; set; }
+    public bool Ativo { get; set; }
 
     public virtual ICollection<Entrada> Entrada { get; set; } = new List<Entrada>();
 

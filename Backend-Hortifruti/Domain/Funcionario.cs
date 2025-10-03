@@ -25,9 +25,9 @@ public partial class Funcionario
 
     public string AgenciaBancaria { get; set; } = null!;
 
-    public sbyte Ativo { get; set; }
+    public bool Ativo { get; set; }
 
-    public virtual Cargo Cargo { get; set; } = null!;
+    public virtual Cargo? Cargo { get; set; }
 
     public virtual ICollection<Historico_produto> HistoricoProdutos { get; set; } = new List<Historico_produto>();
 

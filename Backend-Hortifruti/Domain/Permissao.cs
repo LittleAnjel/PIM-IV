@@ -25,7 +25,7 @@ public partial class Permissao
 
     public int OperacoesId { get; set; }
 
-    public sbyte Permitido { get; set; }
+    public bool Permitido { get; set; }
 
     public virtual Cargo Cargo { get; set; } = null!;
 

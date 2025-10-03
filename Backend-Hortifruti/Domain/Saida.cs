@@ -15,7 +15,7 @@ public partial class Saida
 
     public decimal ValorTotal { get; set; }
 
-    public sbyte Desconto { get; set; }
+    public bool Desconto { get; set; }
 
     public decimal? ValorDesconto { get; set; }
 
