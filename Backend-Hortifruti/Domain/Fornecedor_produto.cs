@@ -18,7 +18,7 @@ public partial class Fornecedor_produto
 
     public sbyte Disponibilidade { get; set; }
 
-    public virtual Fornecedor Fornecedor { get; set; } = null!;
+    public virtual Fornecedor? Fornecedor { get; set; }
 
-    public virtual Produto Produto { get; set; } = null!;
+    public virtual Produto? Produto { get; set; }
 }
