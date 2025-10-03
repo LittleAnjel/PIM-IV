@@ -1,6 +1,6 @@
 using Hortifruti.Domain;
 
-namespace Hortifruti.Service;
+namespace Hortifruti.Service.Interfaces;
 
 public interface IFornecedor_produtoService
 {

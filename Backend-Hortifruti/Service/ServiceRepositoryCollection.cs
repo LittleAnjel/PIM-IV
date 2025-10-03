@@ -1,5 +1,6 @@
 using System.Reflection;
 
+// Adiciona no escopo do as interfaces e os serviços/repositories que as implementam (baseando nos nomes encontrados no assembly)
 public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)

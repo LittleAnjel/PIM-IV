@@ -1,5 +1,5 @@
 using Hortifruti.Domain;
-using Hortifruti.Service;
+using Hortifruti.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hortifruti.Controllers;

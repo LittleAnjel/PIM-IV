@@ -1,4 +1,5 @@
 using Hortifruti.Controllers.Data;
+using Hortifruti.Data.Repository.Interfaces;
 using Hortifruti.Domain;
 using Microsoft.EntityFrameworkCore;
 

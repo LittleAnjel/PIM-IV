@@ -1,6 +1,6 @@
 using Hortifruti.Domain;
 
-namespace Hortifruti.Data.Repository;
+namespace Hortifruti.Data.Repository.Interfaces;
 
 public interface IFornecedor_produtoRepository
 {

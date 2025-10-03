@@ -1,5 +1,6 @@
-using Hortifruti.Data.Repository;
+using Hortifruti.Data.Repository.Interfaces;
 using Hortifruti.Domain;
+using Hortifruti.Service.Interfaces;
 
 namespace Hortifruti.Service;
 
