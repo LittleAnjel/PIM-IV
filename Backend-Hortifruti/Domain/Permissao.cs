@@ -8,12 +8,12 @@ namespace Hortifruti.Domain;
 /// 
 /// ex: Cargo 1 pode acessar módulo de Funcionários e fazer qualquer tipo de operação
 /// 
-/// cargo_id | modulo_id | operacao_id
+/// cargo_id | modulo_id | operacao_id | permitido
 /// 
-///      1	      3	         1
-///      1	      3	         2
-///      1	      3	         3
-///      1	      3	         4
+///      1	      3	         1              1
+///      1	      3	         2              1
+///      1	      3	         3              1
+///      1	      3	         4              1
 /// </summary>
 public partial class Permissao
 {
@@ -27,9 +27,9 @@ public partial class Permissao
 
     public bool Permitido { get; set; }
 
-    public virtual Cargo Cargo { get; set; } = null!;
+    public virtual Cargo? Cargo { get; set; }
 
-    public virtual Modulo Modulo { get; set; } = null!;
+    public virtual Modulo? Modulo { get; set; }
 
-    public virtual Operacao Operacoes { get; set; } = null!;
+    public virtual Operacao? Operacoes { get; set; }
 }
